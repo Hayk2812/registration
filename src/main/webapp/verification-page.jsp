@@ -6,10 +6,10 @@
 </head>
 <%
     String  verificationCode = (String) request.getAttribute("verification_code");
-    String  errorMessage = (String) request.getAttribute("errorMessage");
     if (verificationCode !=null){
         response.getWriter().println(verificationCode);
     }
+    String  errorMessage = (String) request.getAttribute("errorMessage");
     if (errorMessage != null){
         response.getWriter().println(errorMessage);
     }

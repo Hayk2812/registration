@@ -6,7 +6,6 @@ import org.platform.enams.Status;
 public class User {
 @Getter
 @Setter
-
     private int id;
     private String name;
     private String surname;

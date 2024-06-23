@@ -25,7 +25,7 @@ public class UserRepozitory {
             preparedStatement.setString(3,user.getSurname());
             preparedStatement.setInt(4,user.getYear());
             preparedStatement.setString(5,user.getEmail());
-            preparedStatement.setString(6, PasswordEncoder.encode(user.getPassword()));
+            preparedStatement.setString(6, encodedPassword);
             preparedStatement.setString(7,String.valueOf(user.getStatus()));
             preparedStatement.setString(8,user.getVerificationCode());
             preparedStatement.setString(9,user.getResetToken());

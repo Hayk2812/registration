@@ -12,7 +12,7 @@
 </head>
 <body>
 <%
-    Object errorMessage = (String)request.getAttribute("errorMessage");
+    String errorMessage = (String)request.getAttribute("errorMessage");
     if (errorMessage != null){
         response.getWriter().println(errorMessage);
     }
